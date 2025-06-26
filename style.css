@@ -1,0 +1,82 @@
+body {
+  background: rgb(248, 246, 246);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: bluish whitesmoke(248, 246, 246);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px black;
+  width: 300px;
+}
+
+.display {
+  background:#e0e5ec;
+  color: rgb(9, 9, 9);
+  font-size: 2em;
+  text-align: right;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow:inset 6px 6px 12px rgb(48, 48, 48);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  background: #e0e5e;
+  color:black;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow:5px 6px 12px #a3b1c6,-9px -6px 12px #ffffff;
+}
+
+.buttons button:hover {
+  background: rgb(207, 206, 206);
+}
+
+.buttons .operator {
+ box-shadow:5px 6px 12px #a3b1c6,-9px -6px 12px #ffffff;
+  background: rgb(232, 209, 166);
+  color:black;
+}
+
+.buttons .operator:hover {
+  background: rgb(231, 200, 178);
+}
+
+.buttons .equal {
+  background: rgb(114, 124, 233);
+  grid-column: span 2;
+}
+
+
+.buttons .equal:hover {
+  background: rgb(173, 194, 227);
+}
+
+.buttons .clear {
+  box-shadow:5px 6px 12px #a3b1c6,-9px -6px 12px #ffffff;
+  background: rgb(243, 147, 147);
+  color:black;
+  background: #e0e5e;
+  color:black;
+}
+
+
+.buttons .clear:hover {
+  background: rgb(236, 167, 168);
+}
